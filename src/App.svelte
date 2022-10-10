@@ -1,3 +1,12 @@
+<!--
+  
+  IMPORTANT NOTICE
+
+  This is a TEST FILE. Used to test the backend, nothing else. UI implementation will begin once initial backend features have been added and tested.
+
+  - Izaak Kuipers, Oct 10 2022
+
+-->
 <script lang="ts">
   import SocketIO from "socket.io-client";
   import type { Socket } from "socket.io-client";
