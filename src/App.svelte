@@ -29,10 +29,11 @@
       grid = g;
       coins = c;
       console.log("Connected!");
-      socket.emit("join", username, (user) => {
+      socket.emit("join", username, (user, coins) => {
         userData = user;
         connected = true;
         console.log(user);
+        console.log(`login debuggable: `, grid, coins);
       });
     });
 
