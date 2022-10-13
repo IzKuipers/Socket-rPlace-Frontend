@@ -17,6 +17,7 @@
   let socket: Socket;
   let clients: any[] = [];
   let grid: any[] = [];
+  let coins: number = 0;
 
   let x;
   let y;
@@ -24,8 +25,9 @@
   async function login() {
     socket = SocketIO("localhost:3190");
 
-    socket.on("server-connected", (g) => {
+    socket.on("server-connected", (g, c) => {
       grid = g;
+      coins = c;
       console.log("Connected!");
       socket.emit("join", username, (user) => {
         userData = user;
@@ -44,6 +46,10 @@
     });
 
     socket.on("update-grid", (g) => (grid = g));
+
+    socket.on("update-coins", (c) => {
+      coins = c;
+    });
   }
 
   async function disconnect() {
