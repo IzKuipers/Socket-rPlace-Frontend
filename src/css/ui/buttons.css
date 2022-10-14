@@ -1,0 +1,72 @@
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: var(--button-bg);
+  color: var(--fg);
+  font-family: var(--font);
+  transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+  box-sizing: border-box;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.4;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button.secondary {
+  border: var(--button-bg) 1px solid;
+  background-color: var(--bg);
+  padding: 4px 9px;
+}
+
+button.secondary:hover {
+  opacity: 1;
+  background-color: var(--button-bg);
+}
+
+button.secondary:active {
+  background-color: var(--button-active-bg);
+  opacity: 1;
+}
+
+button.suggested {
+  background-color: deepskyblue;
+  color: #fff;
+}
+
+button.flat {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+button.full {
+  display: block;
+  width: 100%;
+}
+
+button span.material-icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 5px;
+  font-size: 19px;
+  margin: 0;
+}
+
+button span.material-icons.right {
+  right: 5px;
+  left: unset;
+}

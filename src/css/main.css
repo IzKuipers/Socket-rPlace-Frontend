@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("./general.css");
 @import url("./login.css");
 @import url("./colors.css");
 @import url("./app.css");
+@import url("./ui.css");
+@import url("./page.css");

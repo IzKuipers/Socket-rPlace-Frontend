@@ -1,0 +1,22 @@
+input {
+  padding: 5px;
+  background-color: var(--button-active-bg);
+
+  border: var(--button-bg) 1px solid;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  color: var(--fg);
+  transition: border 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+input:focus {
+  border: var(--border-clr) 1px solid;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
+input.full {
+  width: 100%;
+}

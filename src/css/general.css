@@ -8,3 +8,11 @@ div.ca {
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+
+* {
+  outline: none !important;
+}
+
+*:not(.material-icons) {
+  font-family: var(--font);
+}

@@ -18,6 +18,7 @@
   --button-hover-bg: #e8e8e8;
   --button-active-bg: #e0e0e0;
   --zermelo-appointment-bg: var(--button-bg);
+  --font: "Inter", sans-serif;
 }
 
 @media screen and (prefers-color-scheme: dark) {
