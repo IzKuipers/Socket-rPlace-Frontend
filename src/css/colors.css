@@ -1,0 +1,130 @@
+:root div.app {
+  --bg: #fff;
+  --fg: #333;
+  --border-clr: #d1d1d1;
+  --clr-red-bg: #ffc5c5;
+  --clr-red-fg: #c50000;
+  --clr-green-bg: #92ff8f;
+  --clr-green-fg: #299126;
+  --clr-yellow-bg: #ffecaa;
+  --clr-yellow-fg: #a58b2f;
+  --clr-orange-bg: #ffe1b5;
+  --clr-orange-fg: #af7011;
+  --clr-blue-bg: #8fd0ff;
+  --clr-blue-fg: #1566a0;
+  --clr-aqua-bg: #ddfff3;
+  --clr-aqua-fg: #39a17d;
+  --button-bg: #f1f1f1;
+  --button-hover-bg: #e8e8e8;
+  --button-active-bg: #e0e0e0;
+  --zermelo-appointment-bg: var(--button-bg);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root div.app {
+    --bg: #222;
+    --fg: #ccc;
+    --border-clr: #434343;
+    --clr-red-bg: #452929;
+    --clr-red-fg: #ff7e7e;
+    --clr-green-bg: #283e28;
+    --clr-green-fg: #a8ffa6;
+    --clr-yellow-bg: #49432e;
+    --clr-yellow-fg: #ffe073;
+    --clr-orange-bg: #543d1b;
+    --clr-orange-fg: #ffad32;
+    --clr-blue-bg: #273a48;
+    --clr-blue-fg: #96d3ff;
+    --clr-aqua-fg: #79ffd0;
+    --clr-aqua-bg: #214538;
+    --button-bg: #313131;
+    --button-hover-bg: #414141;
+    --button-active-bg: #262626;
+    --zermelo-appointment-bg: #262626;
+  }
+}
+
+.clr-red,
+.clr-red * {
+  background-color: var(--clr-red-bg) !important;
+  color: var(--clr-red-fg) !important;
+}
+
+.clr-green,
+.clr-green * {
+  background-color: var(--clr-green-bg) !important;
+  color: var(--clr-green-fg) !important;
+}
+
+.clr-blue,
+.clr-blue * {
+  background-color: var(--clr-blue-bg) !important;
+  color: var(--clr-blue-fg) !important;
+}
+
+.clr-orange,
+.clr-orange * {
+  background-color: var(--clr-orange-bg) !important;
+  color: var(--clr-orange-fg) !important;
+}
+
+.clr-yellow,
+.clr-yellow * {
+  background-color: var(--clr-yellow-bg) !important;
+  color: var(--clr-yellow-fg) !important;
+}
+
+.clr-aqua,
+.clr-aqua * {
+  background-color: var(--clr-aqua-bg) !important;
+  color: var(--clr-aqua-fg) !important;
+}
+
+.hover-clr-red:hover,
+.hover-clr-red:hover * {
+  background-color: var(--clr-red-bg) !important;
+  color: var(--clr-red-fg) !important;
+}
+
+.hover-clr-green:hover,
+.hover-clr-green:hover * {
+  background-color: var(--clr-green-bg) !important;
+  color: var(--clr-green-fg) !important;
+}
+
+.hover-clr-blue:hover,
+.hover-clr-blue:hover * {
+  background-color: var(--clr-blue-bg) !important;
+  color: var(--clr-blue-fg) !important;
+}
+
+.hover-clr-orange:hover,
+.hover-clr-orange:hover * {
+  background-color: var(--clr-orange-bg) !important;
+  color: var(--clr-orange-fg) !important;
+}
+
+.hover-clr-yellow:hover,
+.hover-clr-yellow:hover * {
+  background-color: var(--clr-yellow-bg) !important;
+  color: var(--clr-yellow-fg) !important;
+}
+
+.hover-clr-aqua:hover,
+.hover-clr-aqua:hover * {
+  background-color: var(--clr-aqua-bg) !important;
+  color: var(--clr-aqua-fg) !important;
+}
+
+div.settings {
+  background-color: #0004;
+  opacity: 0;
+  visibility: hidden;
+}
+
+div.settings.show,
+div.ca.settingswindow.show {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
