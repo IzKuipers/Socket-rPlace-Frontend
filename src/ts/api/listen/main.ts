@@ -10,7 +10,6 @@ export async function registerListeners(sock?: Socket) {
   );
 
   for (const listener of listenStore) {
-    console.log(listener[0], listener[1]);
     socket.on(listener[0], listener[1]);
   }
 }
