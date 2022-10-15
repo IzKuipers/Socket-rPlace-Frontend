@@ -8,6 +8,7 @@ button {
   transition: background-color 0.3s, opacity 0.3s, color 0.3s;
   box-sizing: border-box;
   position: relative;
+  font-size: inherit;
 }
 
 button:hover {

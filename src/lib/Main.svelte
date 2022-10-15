@@ -1,4 +1,6 @@
 <script lang="ts">
+  import CoinNotifier from "./Main/CoinNotifier.svelte";
+  import Grid from "./Main/Grid.svelte";
   import RightBar from "./Main/RightBar.svelte";
 
   import TopBar from "./Main/TopBar.svelte";
@@ -7,4 +9,6 @@
 <div class="main-content">
   <TopBar />
   <RightBar />
+  <CoinNotifier />
+  <Grid />
 </div>

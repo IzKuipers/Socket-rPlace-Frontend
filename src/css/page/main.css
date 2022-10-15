@@ -30,8 +30,9 @@ div.rightbar {
 }
 
 div.rightbar h2.header {
-  margin: 0;
+  margin: 0 15px;
   margin-bottom: 15px;
+  font-size: 15px;
 }
 
 div.rightbar h2.header span.count {
@@ -45,11 +46,11 @@ div.rightbar div.player {
   box-sizing: border-box;
 }
 
+div.rightbar div.player * {
+  vertical-align: middle;
+}
+
 div.rightbar div.player div.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  display: inline-block;
   margin-right: 15px;
 }
 
@@ -68,4 +69,76 @@ div.rightbar div.player p.name {
 div.rightbar div.player p.coins {
   float: right;
   opacity: 0.5;
+}
+
+div.topbar div.right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+div.topbar div.right * {
+  vertical-align: middle;
+}
+
+div.topbar div.right button.material-icons.shopbutton {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+div.topbar div.right button.userbutton {
+  text-align: left;
+  height: 30px;
+}
+
+div.topbar div.right button.userbutton p.name {
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+
+div.topbar div.right div.coincounter {
+  background-color: var(--button-bg);
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+div.topbar div.right div.coincounter span.material-icons {
+  font-size: 18px;
+  color: var(--clr-green-fg);
+  margin-right: 5px;
+}
+
+div.topbar div.right div.coincounter p.count {
+  display: inline-block;
+  margin: 0;
+}
+
+div.topbar div.right div.levelcounter {
+  background-color: var(--button-bg);
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+div.topbar div.right div.levelcounter span.material-icons {
+  font-size: 18px;
+  color: var(--clr-orange-fg);
+  margin-right: 5px;
+}
+
+div.topbar div.right div.levelcounter p.count {
+  display: inline-block;
+  margin: 0;
 }

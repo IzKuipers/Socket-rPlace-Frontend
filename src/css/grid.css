@@ -1,0 +1,26 @@
+div.grid.bg {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: calc(100% - 300px);
+  height: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 10px 5px;
+  overflow: scroll;
+}
+
+div.grid.bg div.row {
+  height: 35px;
+  line-height: 35px;
+  width: max-content;
+  margin-bottom: 5px;
+}
+
+div.grid.bg div.row div.cell {
+  width: 35px;
+  height: 35px;
+  margin: 0 2.5px;
+  background-color: var(--button-bg);
+  display: inline-block;
+  border-radius: 2.5px;
+}
