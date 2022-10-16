@@ -14,7 +14,6 @@
   });
 
   UserCoins.subscribe((v) => {
-    console.warn(new Date(), `Tick!`);
     clearTimeout(timeout);
     coins = v;
 
@@ -22,7 +21,7 @@
 
     if (oldCoins == -1) oldCoins = coins;
 
-    diff = `+ ${coins - oldCoins}`;
+    diff = `${coins - oldCoins}`;
 
     timeout = setTimeout(() => {
       show = false;
@@ -32,5 +31,5 @@
 </script>
 
 <div class="coinnotifier" class:show>
-  <span class="material-icons">payments</span>{diff}
+  <span class="material-icons">payments</span>+ {diff} munten
 </div>

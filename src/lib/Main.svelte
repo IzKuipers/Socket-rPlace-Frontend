@@ -9,6 +9,6 @@
 <div class="main-content">
   <TopBar />
   <RightBar />
-  <CoinNotifier />
   <Grid />
+  <CoinNotifier />
 </div>

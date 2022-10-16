@@ -19,8 +19,6 @@ export const listenStore: ListenerStore = new Map<string, ListenerFunction>([
   [
     "update-presence",
     (players: User[]) => {
-      for (let i = 0; i < players.length; i++)
-        console.log(players[i].name, players[i].coins);
       Players.set(players);
     },
   ],

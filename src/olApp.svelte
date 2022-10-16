@@ -32,8 +32,6 @@
       socket.emit("join", username, (user, coins) => {
         userData = user;
         connected = true;
-        console.log(user);
-        console.log(`login debuggable: `, grid, coins);
       });
     });
 
@@ -43,7 +41,6 @@
 
     socket.on("update-presence", (c) => {
       clients = c;
-      console.log(c);
     });
 
     socket.on("update-grid", (g) => (grid = g));
@@ -62,7 +59,7 @@
 
   async function place() {
     socket.emit("place", username, x, y, (v) => {
-      if (!v) console.error("FAIL");
+      if (!v) console.error("Could not place.");
     });
   }
 </script>

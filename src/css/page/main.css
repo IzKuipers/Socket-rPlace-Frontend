@@ -77,6 +77,15 @@ div.topbar div.right {
   right: 10px;
 }
 
+div.topbar div.right div.sep {
+  margin: 5px;
+  height: 20px;
+  width: 1px;
+  background-color: var(--border-clr);
+  display: inline-block;
+  vertical-align: middle;
+}
+
 div.topbar div.right * {
   vertical-align: middle;
 }
@@ -118,6 +127,27 @@ div.topbar div.right div.coincounter span.material-icons {
 }
 
 div.topbar div.right div.coincounter p.count {
+  display: inline-block;
+  margin: 0;
+}
+
+div.topbar div.right div.geninterval {
+  background-color: var(--button-bg);
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+div.topbar div.right div.geninterval span.material-icons {
+  font-size: 18px;
+  color: var(--clr-blue-fg);
+  margin-right: 5px;
+}
+
+div.topbar div.right div.geninterval p.int {
   display: inline-block;
   margin: 0;
 }
