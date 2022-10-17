@@ -15,7 +15,7 @@
   let highlighted = false;
 
   function highlight() {
-    bgGrid.set(generateStar({ x, y }, 5).grid);
+    bgGrid.set(generateStar({ x, y }).grid);
   }
 
   bgGrid.subscribe((v) => {

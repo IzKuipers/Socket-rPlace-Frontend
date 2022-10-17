@@ -4,7 +4,7 @@ import type { Position } from "./interface";
 
 export type starReturn = { grid: Position[]; price: number };
 
-export function generateStar(pos: Position, rad: number = 3) {
+export function generateStar(pos: Position, rad: number = 2) {
   let g: Position[] = [];
   let price = 0;
 
