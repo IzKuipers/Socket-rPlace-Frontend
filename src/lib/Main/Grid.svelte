@@ -1,14 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { GRID_HEIGHT, GRID_WIDTH } from "../../ts/env";
-  import type { Position } from "../../ts/grid/interface";
   import BackgroundCell from "./Grid/BackgroundCell.svelte";
   import ForegroundCell from "./Grid/ForegroundCell.svelte";
 
   let xar = [];
   let yar = [];
   let pop = false;
-  let bga: Position[] = [];
 
   onMount(() => {
     pop = false;

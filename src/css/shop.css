@@ -1,0 +1,79 @@
+div.ca.shop {
+  background-color: var(--bg);
+  border: var(--border-clr) 1px solid;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 30px;
+  transition: opacity 0.3s, visibility 0.3s, margin-top 0.3s;
+  overflow-y: scroll;
+}
+
+div.ca.shop div.shopItem {
+  background-color: var(--button-bg);
+  display: inline-block;
+  margin: 5px;
+  width: 315px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+div.ca.shop div.shopItem p.price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  margin: 0;
+  color: var(--clr-green-fg);
+}
+
+div.ca.shop div.shopItem p.price span.material-icons {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+div.ca.shop div.shopItem button.purchase {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+div.ca.shop div.shopItem * {
+  vertical-align: middle;
+}
+
+div.ca.shop div.shopItem h1.title {
+  font-size: 21px;
+  margin: 5px 0;
+  line-height: 18px;
+}
+
+div.ca.shop div.shopItem h1.title span.material-icons {
+  margin-right: 7.5px;
+  font-size: 20px;
+}
+
+div.ca.shop.show,
+div.shopbg.show {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+
+div.shopbg {
+  background-color: #0004;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}

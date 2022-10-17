@@ -5,14 +5,16 @@ div.grid {
   width: calc(100% - 300px);
   height: calc(100% - 50px);
   overflow: scroll;
+  /* background-color: var(--button-hover-bg); */
 }
 
 div.grid > div {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 10px 5px;
+  padding: 5px 0px;
   box-sizing: border-box;
+  margin: 5px;
 }
 
 div.grid div.row {
@@ -20,6 +22,31 @@ div.grid div.row {
   line-height: 35px;
   width: max-content;
   margin-bottom: 5px;
+}
+
+div.grid.small div.row {
+  height: 15px;
+  line-height: 15px;
+  margin-bottom: 1px;
+}
+
+div.grid div.fg {
+  background-color: var(--bg);
+
+  border-radius: 5px;
+  border: var(--border-clr) 1px solid;
+  margin: 5px;
+}
+
+div.grid > div.bg {
+  border: transparent 1px solid;
+}
+
+div.grid.small div.row div.cell {
+  width: 15px;
+  height: 15px;
+  margin: 0 0.5px;
+  border-radius: 0.5px;
 }
 
 div.grid div.row div.cell {
@@ -30,10 +57,6 @@ div.grid div.row div.cell {
   display: inline-block;
   border-radius: 2.5px;
 }
-/* 
-div.grid div.fg div.row div.cell.highlighted {
-  background-color: #f0f;
-} */
 
 div.grid div.fg div.row div.cell {
   background-color: var(--button-bg);

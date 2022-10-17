@@ -1,10 +1,13 @@
-import { CELL_COST } from "./../env";
+import { CELL_COST, UserData } from "./../env";
 import { GRID_HEIGHT, GRID_WIDTH } from "../env";
 import type { Position } from "./interface";
+import { get } from "svelte/store";
 
 export type starReturn = { grid: Position[]; price: number };
 
-export function generateStar(pos: Position, rad: number = 2) {
+export function generateStar(pos: Position, rad?: number) {
+  if (!rad) rad = get(UserData).radius;
+
   let g: Position[] = [];
   let price = 0;
 
