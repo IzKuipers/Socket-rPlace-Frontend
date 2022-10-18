@@ -1,7 +1,7 @@
 <script lang="ts">
   import { abbreviateNumber } from "js-abbreviation-number";
 
-  import { UserCoins } from "../../../ts/env";
+  import { UserCoins, UserData } from "../../../ts/env";
 
   let formatted = "";
   let coins = 0;
@@ -17,7 +17,10 @@
 <div class="coincounter" title={coins.toString()}>
   <span class="material-icons">payments</span>
   <p class="count">{formatted}</p>
-  <div class="sep" />
-  <span class="material-icons">add</span>
-  <p class="count">{coins > 500000 ? 10000 : 10 * (level || 1)}</p>
 </div>
+<div class="sep" />
+<div class="coincounter">
+  <span class="material-icons">add_circle</span>
+  <p class="count">{$UserData.genamnt}</p>
+</div>
+<div class="sep" />

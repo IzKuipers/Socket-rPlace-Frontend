@@ -4,4 +4,11 @@ export interface ShopItem {
   icon: string;
   price: number;
   tag: string;
+  cat?: Cat;
+}
+
+export interface Cat {
+  tag: string;
+  icon: string;
+  name: string;
 }

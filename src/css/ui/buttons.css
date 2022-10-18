@@ -1,7 +1,7 @@
 button {
   border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 0;
+  padding: 2.5px 10px;
   background-color: var(--button-bg);
   color: var(--fg);
   font-family: var(--font);
@@ -24,9 +24,9 @@ button:disabled {
 }
 
 button.secondary {
-  border: var(--button-bg) 1px solid;
+  border: var(--button-bg) 2px solid;
   background-color: var(--bg);
-  padding: 4px 9px;
+  padding: 3px 8px;
 }
 
 button.secondary:hover {
@@ -52,6 +52,7 @@ button.flat {
 button.full {
   display: block;
   width: 100%;
+  padding: 5px;
 }
 
 button span.material-icons {

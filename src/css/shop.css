@@ -3,26 +3,28 @@ div.ca.shop {
   border: var(--border-clr) 1px solid;
   padding: 15px;
   box-sizing: border-box;
-  width: 700px;
-  height: 500px;
-  border-radius: 10px;
+  width: 800px;
+  height: 520px;
   opacity: 0;
   visibility: hidden;
   margin-top: 30px;
   transition: opacity 0.3s, visibility 0.3s, margin-top 0.3s;
-  overflow-y: scroll;
+}
+
+div.ca.shop h2.title {
+  margin: 5px 0;
 }
 
 div.ca.shop div.shopItem {
-  background-color: var(--button-bg);
   display: inline-block;
   margin: 5px;
-  width: 315px;
+  margin-top: 2.5px;
+  width: calc(100% - 10px);
   box-sizing: border-box;
   padding: 10px;
-  border-radius: 5px;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  border-bottom: var(--border-clr) 1px solid;
 }
 
 div.ca.shop div.shopItem p.price {
@@ -76,4 +78,48 @@ div.shopbg {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s;
+}
+
+div.ca.shop div.sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: var(--border-clr) 1px solid;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+div.ca.shop div.sidebar button.page {
+  text-align: left;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+div.ca.shop div.sidebar h3.title {
+  margin: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.ca.shop div.sidebar button.page.selected {
+  color: var(--clr-blue-fg);
+}
+
+div.ca.shop div.content {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+div.ca.shop div.content h3.title {
+  margin: 5px 15px;
+  text-align: center;
 }

@@ -1,17 +1,15 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
-  import { sockIO } from "../../../ts/env";
-
-  let int = "";
-  onMount(() => {
-    $sockIO.emit("getgenint", (i: number) => {
-      int = `${i / 1000}s`;
-    });
-  });
+  import { UserData } from "../../../ts/env";
 </script>
 
 <div class="geninterval">
   <span class="material-icons">speed</span>
-  <p class="int">{int}</p>
+  <p class="int">{$UserData.genspeed / 1000} sec</p>
+</div>
+
+<div class="geninterval">
+  <span class="material-icons">spoke</span>
+  <p class="int">
+    {$UserData.radius == 1 ? 1 : $UserData.radius * 2 - 1} cells
+  </p>
 </div>

@@ -21,7 +21,7 @@ div.grid div.row {
   height: 35px;
   line-height: 35px;
   width: max-content;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 div.grid.small div.row {
@@ -33,7 +33,7 @@ div.grid.small div.row {
 div.grid div.fg {
   background-color: var(--bg);
 
-  border-radius: 5px;
+  border-radius: 0;
   border: var(--border-clr) 1px solid;
   margin: 5px;
 }
@@ -52,10 +52,13 @@ div.grid.small div.row div.cell {
 div.grid div.row div.cell {
   width: 35px;
   height: 35px;
-  margin: 0 2.5px;
+  margin: 0 1px;
 
   display: inline-block;
-  border-radius: 2.5px;
+  border-radius: 0px;
+  vertical-align: middle;
+  line-height: 35px;
+  text-align: center;
 }
 
 div.grid div.fg div.row div.cell {
@@ -65,4 +68,6 @@ div.grid div.fg div.row div.cell {
 div.grid div.bg div.row div.cell.bg.highlighted {
   background-color: var(--border-clr);
   opacity: 0.6;
+  text-align: left;
+  overflow: visible;
 }

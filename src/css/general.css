@@ -11,6 +11,7 @@ div.ca {
 
 * {
   outline: none !important;
+  user-select: none !important;
 }
 
 *:not(.material-icons) {

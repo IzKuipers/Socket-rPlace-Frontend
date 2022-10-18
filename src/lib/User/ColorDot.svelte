@@ -17,7 +17,6 @@
     height: 10px;
     vertical-align: middle;
     margin-right: 5px;
-    border-radius: 5px;
     display: inline-block;
   }
 </style>

@@ -1,8 +1,9 @@
 import SocketIO from "socket.io-client";
+import { get } from "svelte/store";
 import { registerListeners } from "../api/listen/main";
 import type { User } from "../user/interface";
 import { join } from "../user/main";
-import { sockIO, UserData } from "./../env";
+import { connectionErrored, LoggedIn, sockIO, UserData } from "./../env";
 import type { ConnectCb } from "./interface";
 
 export const SERVER_PORT = 3190;
@@ -16,7 +17,10 @@ export async function connect(server: string, cb: ConnectCb) {
 
   sockIO.set(sock);
 
-  sock.on("connect_error", disconnect);
+  sock.on("connect_error", () => {
+    if (get(LoggedIn)) connectionErrored.set(true);
+    else disconnect();
+  });
   sock.on("server-connected", () => {
     registerListeners(sock);
     console.log(`auth: connect:  -> Server '${server}' now connected.`);
@@ -29,6 +33,7 @@ export async function connect(server: string, cb: ConnectCb) {
 export function disconnect() {
   sockIO.set(null);
   UserData.set(null);
+  LoggedIn.set(false);
 }
 
 export function loginFromLS() {

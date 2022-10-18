@@ -78,9 +78,9 @@ div.topbar div.right {
 }
 
 div.topbar div.right div.sep {
-  margin: 5px;
-  height: 20px;
-  width: 1px;
+  margin: 0 5px;
+  height: 30px;
+  width: 2px;
   background-color: var(--border-clr);
   display: inline-block;
   vertical-align: middle;
@@ -110,17 +110,18 @@ div.topbar div.right button.userbutton p.name {
   margin: 0;
 }
 
-div.topbar div.right div.coincounter {
-  background-color: var(--button-bg);
+div.topbar div.right div.coincounter,
+div.topbar div.right div.geninterval,
+div.topbar div.right div.levelcounter {
   height: 30px;
-  border-radius: 5px;
   display: inline-block;
-  line-height: 30px;
-  padding: 0 10px;
+  line-height: 25px;
+  padding: 0 8px;
   box-sizing: border-box;
 }
 
-div.topbar div.right div.coincounter span.material-icons {
+div.topbar div.right div.coincounter span.material-icons,
+div.topbar div.right div.geninterval span.material-icons {
   font-size: 18px;
   color: var(--clr-green-fg);
   margin-right: 5px;
@@ -131,35 +132,13 @@ div.topbar div.right div.coincounter p.count {
   margin: 0;
 }
 
-div.topbar div.right div.geninterval {
-  background-color: var(--button-bg);
-  height: 30px;
-  border-radius: 5px;
-  display: inline-block;
-  line-height: 30px;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
 div.topbar div.right div.geninterval span.material-icons {
-  font-size: 18px;
   color: var(--clr-blue-fg);
-  margin-right: 5px;
 }
 
 div.topbar div.right div.geninterval p.int {
   display: inline-block;
   margin: 0;
-}
-
-div.topbar div.right div.levelcounter {
-  background-color: var(--button-bg);
-  height: 30px;
-  border-radius: 5px;
-  display: inline-block;
-  line-height: 30px;
-  padding: 0 10px;
-  box-sizing: border-box;
 }
 
 div.topbar div.right div.levelcounter span.material-icons {

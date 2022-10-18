@@ -17,16 +17,14 @@
   onMount(loginFromLS);
 </script>
 
+<div class="login-bg" />
 <div class="ca login">
   <div class="logo-wrapper">
     <img src={logo} alt="Logo" class="logo" />
   </div>
-  <h2>Inloggen</h2>
-  <p>
-    Hi! Wie ben jij en waar denk jij heen te gaan? Vul de gegevens in om te
-    spelen.
-  </p>
-  <input placeholder="Server-naam" class="full" bind:value={server} />
+  <h2>Login</h2>
+  <p>Who are you and where do you dare to go?</p>
+  <input placeholder="Server Name" class="full" bind:value={server} />
   <input
     placeholder="Nickname"
     class="full"
@@ -38,8 +36,7 @@
     disabled={!nicknm || !server}
     on:click={doLogin}
   >
-    Spelen
+    Play
     <span class="material-icons right">rocket_launch</span>
   </button>
-  <button class="full secondary" disabled>Hulp nodig?</button>
 </div>

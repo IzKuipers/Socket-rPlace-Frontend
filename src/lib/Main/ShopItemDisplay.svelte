@@ -40,6 +40,6 @@
     class:clr-red={cantafford && !purchased}
     on:click={buy}
   >
-    {purchased ? "Gekocht" : cantafford ? "Te duur!" : "Kopen"}
+    {purchased ? "Purchased" : cantafford ? "Too expensive" : "Buy"}
   </button>
 </div>

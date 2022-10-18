@@ -9,6 +9,7 @@ export const listenStore: ListenerStore = new Map<string, ListenerFunction>([
     "update-user",
     (user: User) => {
       UserData.set(user);
+      UserCoins.set(user.coins);
     },
   ],
   [
