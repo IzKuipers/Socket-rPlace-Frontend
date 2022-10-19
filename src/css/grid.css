@@ -68,6 +68,5 @@ div.grid div.fg div.row div.cell {
 div.grid div.bg div.row div.cell.bg.highlighted {
   background-color: var(--border-clr);
   opacity: 0.6;
-  text-align: left;
   overflow: visible;
 }

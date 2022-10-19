@@ -8,4 +8,13 @@ export interface User {
   genamnt: number;
   genspeed: number;
 }
-export type DotColor = "red" | "green" | "orange" | "yellow" | "blue" | "aqua";
+export type DotColor =
+  | "red"
+  | "green"
+  | "orange"
+  | "yellow"
+  | "blue"
+  | "aqua"
+  | "purple"
+  | "pink"
+  | "lime";

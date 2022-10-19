@@ -20,6 +20,15 @@
   --clr-aqua-fg: #79ffd0;
   --clr-aqua-bg: #214538;
   --clr-aqua-dot: var(--clr-aqua-fg);
+  --clr-purple-fg: #b84dff;
+  --clr-purple-bg: #3b2748;
+  --clr-purple-dot: var(--clr-purple-fg);
+  --clr-pink-fg: #ff73ff;
+  --clr-pink-bg: #522652;
+  --clr-pink-dot: var(--clr-pink-fg);
+  --clr-lime-fg: #00ff00;
+  --clr-lime-bg: #005200;
+  --clr-lime-dot: var(--clr-lime-fg);
   --button-bg: #313131;
   --button-hover-bg: #414141;
   --button-active-bg: #262626;
@@ -63,6 +72,24 @@
   color: var(--clr-aqua-fg) !important;
 }
 
+.clr-lime,
+.clr-lime * {
+  background-color: var(--clr-lime-bg) !important;
+  color: var(--clr-lime-fg) !important;
+}
+
+.clr-purple,
+.clr-purple * {
+  background-color: var(--clr-purple-bg) !important;
+  color: var(--clr-purple-fg) !important;
+}
+
+.clr-pink,
+.clr-pink * {
+  background-color: var(--clr-pink-bg) !important;
+  color: var(--clr-pink-fg) !important;
+}
+
 .hover-clr-red:hover,
 .hover-clr-red:hover * {
   background-color: var(--clr-red-bg) !important;
@@ -97,6 +124,24 @@
 .hover-clr-aqua:hover * {
   background-color: var(--clr-aqua-bg) !important;
   color: var(--clr-aqua-fg) !important;
+}
+
+.hover-clr-pink:hover,
+.hover-clr-pink:hover * {
+  background-color: var(--clr-pink-bg) !important;
+  color: var(--clr-pink-fg) !important;
+}
+
+.hover-clr-purple:hover,
+.hover-clr-purple:hover * {
+  background-color: var(--clr-purple-bg) !important;
+  color: var(--clr-purple-fg) !important;
+}
+
+.hover-clr-lime:hover,
+.hover-clr-lime:hover * {
+  background-color: var(--clr-lime-bg) !important;
+  color: var(--clr-lime-fg) !important;
 }
 
 div.settings {
