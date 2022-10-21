@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { GRID_HEIGHT, GRID_WIDTH } from "../../ts/env";
+  import { GRID_HEIGHT, GRID_WIDTH, smallView } from "../../ts/env";
   import BackgroundCell from "./Grid/BackgroundCell.svelte";
   import ForegroundCell from "./Grid/ForegroundCell.svelte";
 
@@ -24,7 +24,7 @@
 </script>
 
 {#if pop}
-  <div class="grid">
+  <div class="grid" class:small={$smallView}>
     <div class="fg">
       {#each yar as y}
         <div class="row">

@@ -26,7 +26,7 @@
 </script>
 
 <div class="shopbg" class:show={$showShop} />
-<div class="ca shop" class:show={$showShop}>
+<div class="full shop" class:show={$showShop}>
   {#if cats.length && items.length}
     <Sidebar {cats} />
     <Content />

@@ -9,6 +9,14 @@ div.ca {
   -webkit-transform: translate(-50%, -50%);
 }
 
+div.full {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
 * {
   outline: none !important;
   user-select: none !important;

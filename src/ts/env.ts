@@ -15,6 +15,7 @@ export const Clients: Writable<string[]> = writable<string[]>([]);
 export const ShopPage: Writable<Cat> = writable<Cat>(null);
 export const connectionErrored: Writable<boolean> = writable<boolean>(false);
 export const bgGrid: Writable<Position[]> = writable<Position[]>([]);
+export const smallView: Writable<boolean> = writable<boolean>(false);
 
 export const GRID_WIDTH = 60;
 export const GRID_HEIGHT = 42;

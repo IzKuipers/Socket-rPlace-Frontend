@@ -5,6 +5,7 @@
   import ShopButton from "./TopBar/ShopButton.svelte";
   import UserMenu from "./TopBar/UserMenu.svelte";
   import GenInterval from "./TopBar/GenInterval.svelte";
+  import ViewButton from "./TopBar/ViewButton.svelte";
 </script>
 
 <div class="topbar">
@@ -15,6 +16,7 @@
     <div class="sep" />
     <LevelCounter />
     <div class="sep" />
+    <ViewButton />
     <ShopButton />
     <UserMenu />
   </div>

@@ -1,21 +1,21 @@
-div.ca.shop {
+div.full.shop {
   background-color: var(--bg);
-  border: var(--border-clr) 1px solid;
+  /* border: var(--border-clr) 1px solid; */
   padding: 15px;
   box-sizing: border-box;
-  width: 800px;
-  height: 520px;
+  width: 100%;
+  height: calc(100% - 50px);
   opacity: 0;
   visibility: hidden;
   margin-top: 30px;
   transition: opacity 0.3s, visibility 0.3s, margin-top 0.3s;
 }
 
-div.ca.shop h2.title {
+div.full.shop h2.title {
   margin: 5px 0;
 }
 
-div.ca.shop div.shopItem {
+div.full.shop div.shopItem {
   display: inline-block;
   margin: 5px;
   margin-top: 2.5px;
@@ -27,7 +27,7 @@ div.ca.shop div.shopItem {
   border-bottom: var(--border-clr) 1px solid;
 }
 
-div.ca.shop div.shopItem p.price {
+div.full.shop div.shopItem p.price {
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -35,33 +35,33 @@ div.ca.shop div.shopItem p.price {
   color: var(--clr-green-fg);
 }
 
-div.ca.shop div.shopItem p.price span.material-icons {
+div.full.shop div.shopItem p.price span.material-icons {
   font-size: 20px;
   margin-right: 5px;
 }
 
-div.ca.shop div.shopItem button.purchase {
+div.full.shop div.shopItem button.purchase {
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
 
-div.ca.shop div.shopItem * {
+div.full.shop div.shopItem * {
   vertical-align: middle;
 }
 
-div.ca.shop div.shopItem h1.title {
+div.full.shop div.shopItem h1.title {
   font-size: 21px;
   margin: 5px 0;
   line-height: 18px;
 }
 
-div.ca.shop div.shopItem h1.title span.material-icons {
+div.full.shop div.shopItem h1.title span.material-icons {
   margin-right: 7.5px;
   font-size: 20px;
 }
 
-div.ca.shop.show,
+div.full.shop.show,
 div.shopbg.show {
   visibility: visible;
   opacity: 1;
@@ -80,7 +80,7 @@ div.shopbg {
   transition: visibility 0.3s, opacity 0.3s;
 }
 
-div.ca.shop div.sidebar {
+div.full.shop div.sidebar {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -91,24 +91,24 @@ div.ca.shop div.sidebar {
   padding: 10px;
 }
 
-div.ca.shop div.sidebar button.page {
+div.full.shop div.sidebar button.page {
   text-align: left;
   padding-left: 35px;
   margin-bottom: 10px;
   background-color: transparent;
 }
 
-div.ca.shop div.sidebar h3.title {
+div.full.shop div.sidebar h3.title {
   margin: 4px;
   text-align: center;
   margin-bottom: 20px;
 }
 
-div.ca.shop div.sidebar button.page.selected {
+div.full.shop div.sidebar button.page.selected {
   color: var(--clr-blue-fg);
 }
 
-div.ca.shop div.content {
+div.full.shop div.content {
   position: absolute;
   top: 0px;
   left: 250px;
@@ -119,7 +119,7 @@ div.ca.shop div.content {
   overflow-y: scroll;
 }
 
-div.ca.shop div.content h3.title {
+div.full.shop div.content h3.title {
   margin: 5px 15px;
   text-align: center;
 }
