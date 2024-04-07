@@ -6,7 +6,7 @@ import { join } from "../user/main";
 import { connectionErrored, LoggedIn, sockIO, UserData } from "./../env";
 import type { ConnectCb } from "./interface";
 
-export const SERVER_PORT = 3190;
+export const SERVER_PORT = 443;
 
 export async function connect(server: string, cb: ConnectCb) {
   console.log(
