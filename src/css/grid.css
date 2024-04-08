@@ -59,6 +59,10 @@ div.grid div.row div.cell {
   vertical-align: middle;
   line-height: 35px;
   text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 div.grid div.fg div.row div.cell {
