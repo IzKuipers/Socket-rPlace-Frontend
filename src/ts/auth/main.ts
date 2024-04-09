@@ -1,7 +1,6 @@
 import SocketIO from "socket.io-client";
 import { get } from "svelte/store";
 import { registerListeners } from "../api/listen/main";
-import type { User } from "../user/interface";
 import { join } from "../user/main";
 import { connectionErrored, LoggedIn, sockIO, UserData } from "./../env";
 import type { ConnectCb } from "./interface";

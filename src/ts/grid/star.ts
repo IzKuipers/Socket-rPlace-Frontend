@@ -1,7 +1,7 @@
-import { CELL_COST, UserData } from "./../env";
-import { GRID_HEIGHT, GRID_WIDTH } from "../env";
-import type { Position } from "./interface";
 import { get } from "svelte/store";
+import { GRID_HEIGHT, GRID_WIDTH } from "../env";
+import { CELL_COST, UserData } from "./../env";
+import type { Position } from "./interface";
 
 export type starReturn = { grid: Position[]; price: number };
 

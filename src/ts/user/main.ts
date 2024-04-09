@@ -1,7 +1,7 @@
-import { UserCoins } from "./../env";
 import { get } from "svelte/store";
 import type { JoinCb } from "../auth/interface";
 import { LoggedIn, sockIO, UserData } from "../env";
+import { UserCoins } from "./../env";
 import type { User } from "./interface";
 
 export function join(username: string, cb: JoinCb = null): boolean {

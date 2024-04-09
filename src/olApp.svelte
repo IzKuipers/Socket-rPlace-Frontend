@@ -8,8 +8,8 @@
 
 -->
 <script lang="ts">
-  import SocketIO from "socket.io-client";
   import type { Socket } from "socket.io-client";
+  import SocketIO from "socket.io-client";
   let connected = false;
   let userData = null;
 

@@ -1,5 +1,5 @@
-import { PlayGrid } from "./../env";
 import { get } from "svelte/store";
+import { PlayGrid } from "./../env";
 import type { Cell } from "./interface";
 
 export function updateGridWith(cells: Cell[]) {

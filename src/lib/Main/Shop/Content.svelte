@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ShopPage, sockIO } from "../../../ts/env";
-  import type { Cat, ShopItem } from "../../../ts/shop/interface";
+  import type { ShopItem } from "../../../ts/shop/interface";
   import ShopItemDisplay from "../ShopItemDisplay.svelte";
 
   let catItems: ShopItem[] = [];

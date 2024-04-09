@@ -1,9 +1,9 @@
 <script lang="ts">
   import { connect, loginFromLS } from "../ts/auth/main";
 
+  import { onMount } from "svelte";
   import logo from "../assets/logo-transparent.png";
   import { join } from "../ts/user/main";
-  import { onMount } from "svelte";
 
   let server: string;
   let nicknm: string;
